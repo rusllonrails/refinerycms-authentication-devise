@@ -3,7 +3,7 @@ module Refinery
     module Devise
       class PasswordsController < ::Devise::PasswordsController
         helper Refinery::Core::Engine.helpers
-        layout 'refinery/layouts/login'
+        layout 'application'
 
         before_action :store_password_reset_return_to, :only => [:update]
         def store_password_reset_return_to

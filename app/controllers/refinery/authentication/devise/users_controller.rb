@@ -7,7 +7,7 @@ module Refinery
         before_action :redirect?, :only => [:new, :create]
 
         helper Refinery::Core::Engine.helpers
-        layout 'refinery/layouts/login'
+        layout 'application'
 
         def new
           @user = User.new

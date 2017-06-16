@@ -3,7 +3,7 @@ module Refinery
     module Devise
       class SessionsController < ::Devise::SessionsController
         helper Refinery::Core::Engine.helpers
-        layout 'refinery/layouts/login'
+        layout 'application'
 
         before_action :clear_unauthenticated_flash, :only => [:new]
         before_action :force_signup_when_no_users!
